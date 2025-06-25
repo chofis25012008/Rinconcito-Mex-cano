@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('rin.jpg'); /* Cambia esta URL por tu imagen */
+            background-image: url('rin.jpg');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -116,6 +116,12 @@
             font-weight: bold;
             margin-top: 10px;
         }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -177,6 +183,12 @@
         <ul id="cart-items"></ul>
         <p id="total">Total: $0</p>
         <button onclick="checkout()">Finalizar Pedido</button>
+    </div>
+
+    <div class="back-button">
+        <a href="index.html">
+            <button>🔙 Regresar</button>
+        </a>
     </div>
 
     <script>
